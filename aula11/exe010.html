@@ -13,18 +13,19 @@
         <input type="number" name="vel" id="ivel"> km/h
         <input type="button" value="Verificar" onclick="verificar()">
     </div>
-    <div id="velocidade"></div>
-    <div id="res">Resultado</div>
+    <div id="res"></div>
 </body>
 <script>
 
+
 function verificar(){
+    res.innerHTML = ""
     var vel = document.getElementById("ivel")
     var velNum = Number(vel.value)
-    velocidade.innerHTML = `Sua velocidade foi de ${velNum} km/h`
+    res.innerHTML = `<p>Sua velocidade foi de <strong>${velNum} km/h</strong></p>`
 
     if (velNum > 50) {
-        res.innerHTML = "Multado"
+        res.innerHTML += "<p>Multado</p>"
     } 
 
 

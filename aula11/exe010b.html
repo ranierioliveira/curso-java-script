@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    
+    <div>
+        <label for="inac">Digite sua nacionalidade</label>
+        <select name="nac" id="inac">
+            <option value="escolha" selected disabled>--Escolha--</option>
+            <option value="bra">Brasileira</option>
+            <option value="eua">Americana</option>
+            <option value="can">Canadense</option>
+            <option value="mex">Mexicana</option>
+        </select>
+        <input type="button" value="Verificar" onClick="verificar()">
+    </div>
+    <div id="res">
+
+    </div>
+
+<script>
+    function verificar(){
+        var nac = document.getElementById('inac').value
+
+        if (nac == "bra") {
+            res.innerHTML = "Sua nacionalidade é brasileira"
+        } else {
+            res.innerHTML = "Você é estrangeiro"
+        }
+        
+    }
+</script>
+</body>
+</html>
