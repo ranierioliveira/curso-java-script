@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(107, 107, 241);
+    background-color: white;
     font: normal 15pt Arial;
 }
 header{
@@ -15,6 +15,17 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+    text-align: center;
+}
+div{
+    margin: 10px;
+}
+img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
 }
 footer{
     color: white;
