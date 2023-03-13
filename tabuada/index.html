@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>Tabuada</title>
 </head>
 <body>
     <!DOCTYPE html>
@@ -13,31 +13,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COntador</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div id="inc">
-            <label for="inicio">Início</label>
-            <input type="number" id="inicio">   
+            <label for="inumero">Número</label>
+            <input type="number" name="numero" id="inumero">
+            <button onclick="gerarTabuada()">Gerar Tabuada</button>
         </div>
         <div>
-          <label for="fim">Fim</label>
-           <input type="number" id="fim">
-        </div>
-        <div id="passo">
-           <label for="passos">Passo</label>
-           <input type="number" id="passos">
-        </div>
-        <div>
-          <button onclick="contar()">Contar</button>
-        </div>
-        <div>
-            <p id="res">Preparando a contagem...</p>
+          
         </div>
     </section>
     <footer>
@@ -46,4 +36,3 @@
 </body>
 <script src="script.js"></script>
 </html>
-
