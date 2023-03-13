@@ -33,3 +33,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
+p{
+    margin: 16px;
+}

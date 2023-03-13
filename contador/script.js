@@ -9,12 +9,17 @@ function contar(){
     alert("Passo inválido, considerando passo 1");
     passo = 1;
   }
-  if(inicio == "" || fim == "" || passo == "" || inicio > fim){
+  if(inicio == "" || fim == "" || passo == ""){
     res.innerHTML = "Impossível contar!"
+  }else if (inicio > fim){
+    //contagem regressiva
+    for (inicio; inicio >= fim; inicio = inicio - passo){
+      res.innerHTML +=  " " + inicio;
+    }
   }else{
+    //contagem crescente
     for (inicio; inicio <= fim; inicio = inicio + passo){
       res.innerHTML +=  " " + inicio;
     }
   }
-  
 }
