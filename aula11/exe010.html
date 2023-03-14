@@ -20,8 +20,8 @@
 
 function verificar(){
     res.innerHTML = ""
-    var vel = document.getElementById("ivel")
-    var velNum = Number(vel.value)
+    let vel = document.getElementById("ivel")
+    let velNum = Number(vel.value)
     res.innerHTML = `<p>Sua velocidade foi de <strong>${velNum} km/h</strong></p>`
 
     if (velNum > 50) {

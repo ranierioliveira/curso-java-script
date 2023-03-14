@@ -1,5 +1,5 @@
-var agora = new Date()
-var hora = agora.getHours()
+let agora = new Date()
+let hora = agora.getHours()
 console.log(`Agora são ${hora} horas.`)
 
 if (hora < 12){

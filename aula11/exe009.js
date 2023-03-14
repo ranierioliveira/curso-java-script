@@ -1,5 +1,5 @@
-var país = "Brasil"
-if (país == "Brasil"){
+let pais = "Brasil"
+if (pais == "Brasil"){
     console.log("Brasileiro")
 } else {
     console.log("Estrangeiro")

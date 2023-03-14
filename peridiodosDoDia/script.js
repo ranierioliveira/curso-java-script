@@ -1,8 +1,8 @@
 function carregar(){
-    var msg = document.getElementById("msg")
-    var imagem = document.getElementById("imagem")
-    var data = new Date()
-    var hora = data.getHours()
+    let msg = document.getElementById("msg")
+    let imagem = document.getElementById("imagem")
+    let data = new Date()
+    let hora = data.getHours()
     msg.innerHTML = "Agora são " + hora + " horas"
 
     if (hora >= 0 && hora < 12){
