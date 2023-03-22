@@ -11,7 +11,7 @@ function gerarTabuada(){
         while(c <= 10){
             let item = document.createElement('option');
             item.text = `${n} X ${c} = ${n*c}`
-            tab.value = 
+            tab.value = `tab${c}`;
             tab.appendChild(item);
             c++;
         } 
