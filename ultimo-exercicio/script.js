@@ -1,8 +1,9 @@
-function adicionar(){
-    let numeroAdicionado = document.getElementById("inum");
-    let mostrador = document.getElementById("iselecionados");
+let numeroAdicionado = document.getElementById("inum");
+let mostrador = document.getElementById("iselecionados");
+let res = document.getElementById("resultados");
+let guardaValores = [];
 
-    
+function adicionar(){
     if(numeroAdicionado.value.length == 0){
         alert("Digite algum número para ser adicionado!")
     }else{
@@ -15,6 +16,8 @@ function adicionar(){
                 let item = document.createElement('option');
                 item.text += `valor ${valor} foi adicionado`;
                 mostrador.appendChild(item); 
+
+                res.innerHTML = "";
             } else{
                 alert("Valor já encontrado na lista!")
             }
@@ -22,16 +25,15 @@ function adicionar(){
             alert("Digite um valor entre 0 e 100!");
         } 
     }  
-    numeroAdicionado.value= "";
-    }
-    
-let guardaValores = [];
+    numeroAdicionado.value = "";
+}
 
 function finalizar(){
 
     if(guardaValores.length == 0){
         alert("Adicione valores antes de finalizar!")
     }else{
+        res.innerHTML = "";
         let soma = 0;
     
         for(let pos in guardaValores){
@@ -39,7 +41,6 @@ function finalizar(){
         }
         let media = soma/guardaValores.length
     
-        let res = document.getElementById("resultados");
         res.innerHTML = `Ao todo temos ${guardaValores.length} números cadastrados.<br>`
         res.innerHTML += `O maior número informado foi ${Math.max.apply(null, guardaValores)}.<br>`;
         res.innerHTML += `O menor número informado foi ${Math.min.apply(null, guardaValores)}.<br>`;
